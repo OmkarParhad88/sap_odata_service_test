@@ -1,0 +1,245 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Start sales_order_app",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/sales_order_app",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#salesorderapp-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=002&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ES5/sales_order_app\"}"
+      }
+    },
+    {
+      "name": "Start sales_order_app Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/sales_order_app",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flpSandbox.html#salesorderapp-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=002&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ES5/sales_order_app\"}"
+      }
+    },
+    {
+      "name": "Start sales_order_app Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/sales_order_app",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flpSandbox.html#salesorderapp-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=002&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ES5/sales_order_app\"}"
+      }
+    },
+    {
+      "name": "Start analytical_table",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/analytical_table",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#analyticaltable-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=002&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ES5/analytical_table\"}"
+      }
+    },
+    {
+      "name": "Start analytical_table Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/analytical_table",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flpSandbox.html#analyticaltable-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=002&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ES5/analytical_table\"}"
+      }
+    },
+    {
+      "name": "Start analytical_table Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/analytical_table",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flpSandbox.html#analyticaltable-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=002&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ES5/analytical_table\"}"
+      }
+    },
+    {
+      "name": "Start responsive",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/responsive",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#responsive-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=002&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ES5/responsive\"}"
+      }
+    },
+    {
+      "name": "Start responsive Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/responsive",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flpSandbox.html#responsive-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=002&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ES5/responsive\"}"
+      }
+    },
+    {
+      "name": "Start responsive Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/responsive",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flpSandbox.html#responsive-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=002&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ES5/responsive\"}"
+      }
+    }
+  ]
+}
