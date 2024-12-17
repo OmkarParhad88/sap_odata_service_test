@@ -1,0 +1,81 @@
+<mvc:View controllerName="salesorderapp.controller.overview"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+       <Table
+                items="{/SEPMRA_C_SalesOrder}"
+                noDataText="Drop column list items here and columns in the area above"
+                id="table"
+            >
+                <items>
+                    <ColumnListItem
+                        type="Navigation"
+                        id="item0"
+                    >
+                        <cells>
+                        <Label id="label10" text="{ActiveSalesOrder}"/>
+                        <Label id="label3" text="{SalesOrder}"/>
+                        <Label id="label4" text="{BillToParty}"/>
+                        <Label id="label5" text="{ShipToParty}"/>
+                        <Label id="label6" text="{GrossAmountInTransacCurrency}"/>
+                        <Label id="label8" text="{ path: 'LastChangedDateTime', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' }}"/>
+                    
+                        </cells>
+                    </ColumnListItem>
+                </items>
+
+                <columns>
+                    <Column id="column01">
+                        <header>
+                            <Label
+                                text="ActiveSalesOrder"
+                                id="label00"
+                            />
+                        </header>
+                    </Column>
+                    <Column id="column0">
+                        <header>
+                            <Label
+                                text="SalesOrder"
+                                id="label0"
+                            />
+                        </header>
+                    </Column>
+
+                    <Column id="column1">
+                        <header>
+                            <Label
+                                text="BillToParty"
+                                id="label1"
+                            />
+                        </header>
+                    </Column>
+
+                    <Column id="column2">
+                        <header>
+                            <Label
+                                text="ShipToParty"
+                                id="label2"
+                            />
+                        </header>
+                    </Column>
+                    <Column id="column3">
+                        <header>
+                            <Label
+                                text="GrossAmountInTransacCurrency"
+                                id="label7"
+                            />
+                        </header>
+                    </Column>
+                    <Column id="column4">
+                        <header>
+                            <Label
+                                text="LastChangedDateTime"
+                                id="label9"
+                            />
+                        </header>
+                    </Column>
+                </columns>
+            </Table>
+    </Page>
+</mvc:View>
